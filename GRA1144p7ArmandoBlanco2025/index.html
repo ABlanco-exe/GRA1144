@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Page | Armando Blanco 2025</title>
+<style>
+	
+	body{
+    margin: 0;
+	background-repeat: no-repeat;
+	background-position:left 25%;
+	background-color: rgba(204,167,117,1.00);
+    background-image: url("Background.png");
+    background-size:cover;
+    background-position: center top;
+	}
+	
+	footer{
+		background-color: rgba(114,109,109,0.60);
+		padding:10px;
+		border-radius: 20px;
+	}	
+	
+wrapper {
+    margin: auto;
+	width: 1300px;
+	height: 800px;
+	display: block;
+	background-color: transparent;
+	background-image: none;
+}
+	
+	
+header {
+    height: 100px;
+    background-color: rgba(114,109,109,0.60);
+	border-radius: 20px;
+}
+	
+#Tabs1 ul {
+	border: none;
+	background-color: transparent;
+	background-image: none;
+}
+    #Tabs1 {
+	background-color: transparent;
+	border: none;
+	background-image: none;
+}	
+	
+#Tabs1 img {
+    height: 50px;
+    width: auto;
+}
+#Tabs1 ul p {
+    text-align: center;
+ }
+#Tabs1 ul li {
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    padding: 10px;
+    box-sizing: content-box;
+}
+	
+	  #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+	background-color: rgba(114,109,109,0.60);
+	border-radius: 5px;
+	}
+	
+	input , select{
+	border: thick solid rgba(32,112,178,1.00);
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 92%;
+}
+.date  , select, .submit{
+	width: 45%;
+	display: inline;
+}
+.submit {
+	background-color: rgba(59,95,175,1.00);
+	color: rgba(252,219,207,1.00);
+	margin-left: 22px;
+}
+    div p {
+	padding: 0;
+	display: inline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	
+</style>
+<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="../jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="../jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<wrapper>
+  <header>
+	
+	  <img style="height:100px; margin-left: 0px;" src="Logo.png">
+	
+  </header>
+	
+	
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img  src="plane.png">
+		  <br>
+        <p>Flights</p>
+      </a></li>
+      <li><a href="#tabs-2"><img  src="car.png">
+		  <br>
+        <p>Cars</p>
+      </a></li>
+      <li><a href="#tabs-3"><img  src="boat.png">
+		  <br>
+        <p>Cruises</p>
+      </a></li>
+      <li><a href="#tabs-4"><img  src="bed.png">
+		  <br>
+        <p>Hotels</p>
+      </a></li>
+      <li><a href="#tabs-5"><img  src="map.png">
+		  <br>
+        <p>Activities</p>
+      </a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Flights</p>
+      <br>
+		<input type="text" placeholder="Leaving from?">
+		<input type="text" placeholder="Going to?">
+	  <p> </p>
+      <input type="date" class="date">
+	  <p>to</p>
+	  <input type="date" class="date">
+	  <select>
+	    <option value="0">Number of Travelers</option>
+	    <option value="1" selected="SELECTED">1</option>
+	    <option value="2">2</option>
+	    <option value="3">3</option>
+	    <option value="4">4</option>
+	    <option value="5">5</option>
+	    <option value="5+">5+</option>
+      </select>
+	<input type="submit" class="submit" value="Find Your Flight">
+    </div>
+    <div id="tabs-2">
+      <p>Cars</p>
+		<br>
+		<input type="text" placeholder="Make">
+	    <p> </p>
+	    <input type="text" placeholder="Model">
+	    <input type="date" class="date">
+	    <p>to</p>
+	    <input type="date" class="date">
+    </div>
+    <div id="tabs-3">
+      <p>Cruises</p>
+		<br>
+		   <input type="text" placeholder="From where?">
+	  <p> </p>
+      <input type="date" class="date">
+	  <p>to</p>
+	  <input type="date" class="date">
+	  <select>
+	    <option value="0">Number of Travelers</option>
+	    <option value="1" selected="SELECTED">1</option>
+	    <option value="2">2</option>
+	    <option value="3">3</option>
+	    <option value="4">4</option>
+	    <option value="5">5</option>
+	    <option value="5+">5+</option>
+      </select>
+	    <input type="submit" class="submit" value="Find Your Cruise">
+    </div>
+    <div id="tabs-4">
+      <p>Hotels</p>
+		<br>
+		<input type="text" placeholder="Location?">
+	  <p> </p>
+      <input type="date" class="date">
+	  <p>to</p>
+	  <input type="date" class="date">
+    </div>
+    <div id="tabs-5">
+      <p>Activities</p>
+		<br>
+		<input type="text" placeholder="Location?">
+	  <input type="submit" class="submit" value="Find Things to Do">
+    </div>
+  </div>
+	
+<footer><p>&copy; 2025, Armando Blanco. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
